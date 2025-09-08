@@ -95,13 +95,14 @@ body {
 
 /* FORM */
 
-form {
+.form {
   display: grid;
   gap: 20px;
 }
 
 .form-container {
   display: grid;
+  grid-template-columns: 1fr auto;
   gap: 10px;
 }
 .form-container label {
@@ -109,12 +110,14 @@ form {
 }
 
 .input {
+  width: 100%;
   padding: 12px;
   border-radius: 8px;
   border: 1px solid var(--grey);
   font: inherit;
   color: var(--blue-800);
   cursor: pointer;
+  grid-column: 1 / -1;
 }
 .input::placeholder {
   color: var(--grey);
@@ -156,6 +159,26 @@ form {
   transform: translateY(15px);
   opacity: 0.6;
 }
+
+/* ERROR STYLES */
+
+.error-message {
+  color: var(--red);
+  font-family: inherit;
+  font-weight: 700;
+  text-align: end;
+  grid-row: 1;
+  grid-column: 2;
+}
+
+.error-general {
+  border: 1px solid var(--red);
+  color: var(--red);
+  background-color: hsla(4, 100%, 67%, 0.2);
+}
+/* .input:invalid ~ .error-message {
+  display: block;
+} */
 
 /* SUCCESS MESSAGE SECTION */
 
