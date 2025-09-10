@@ -4,6 +4,7 @@ const newsletterSection = document.querySelector(".newsletter-container");
 const successSection = document.querySelector(".success-container");
 const form = document.querySelector(".form");
 const emailInput = document.querySelector(".input");
+const dismissButton = document.querySelector(".dismiss-btn");
 
 const createErrorMessage = (input) => {
   let errorElement = input.nextElementSibling;
@@ -25,6 +26,7 @@ const validationCheck = (e) => {
   e.preventDefault();
 
   const errorMessage = createErrorMessage(emailInput);
+  const userEmail = emailInput.value.trim();
 
   emailInput.classList.remove("error-general");
   errorMessage.textContent = " ";
@@ -33,9 +35,19 @@ const validationCheck = (e) => {
     emailInput.classList.add("error-general");
     errorMessage.textContent = "Valid email required";
     return;
+  } else {
+    newsletterSection.classList.add("hidden");
+    successSection.classList.remove("hidden");
+    successSection.querySelector("b").textContent = userEmail;
   }
 
   form.reset();
 };
 
+const dismissMessage = () => {
+  successSection.classList.add("hidden");
+  newsletterSection.classList.remove("hidden");
+}
+
 form.addEventListener("submit", validationCheck);
+dismissButton.addEventListener("click", dismissMessage);

@@ -185,7 +185,7 @@ body {
 .success-container {
   background-color: var(--white);
 
-  display: none;
+  display: grid;
   align-items: center;
   gap: 25px;
   max-width: 460px;
@@ -195,6 +195,10 @@ body {
 
 .success-container .title {
   line-height: 0.9;
+}
+
+.hidden {
+  display: none;
 }
 
 /* FOOTER */
