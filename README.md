@@ -32,9 +32,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [https://voitsekhovska.github.io/newsletter-sign-up-form](https://voitsekhovska.github.io/newsletter-sign-up-form/)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
-
+- Solution URL: [https://www.frontendmentor.io/solutions/newsletter-sign-up-form-with-success-message](https://www.frontendmentor.io/solutions/newsletter-sign-up-form-with-success-message-6qbaxPJkZo)
+- Live Site URL: [https://voitsekhovska.github.io/newsletter-sign-up-form](https://voitsekhovska.github.io/newsletter-sign-up-form/)
 ## My process
 
 ### Built with
