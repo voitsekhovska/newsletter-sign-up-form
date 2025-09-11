@@ -19,8 +19,14 @@
   <body>
     <main>
       <section class="newsletter-container">
-        <picture
-          ><img src="./assets/images/illustration-sign-up-desktop.svg" alt=""
+        <picture>
+          <source
+            srcset="./assets/images/illustration-sign-up-mobile.svg"
+            media="(max-width: 450px)" />
+          <source
+            srcset="./assets/images/illustration-sign-up-tablet.svg"
+            media="(max-width: 800px)" />
+          <img src="./assets/images/illustration-sign-up-desktop.svg" alt=""
         /></picture>
         <div class="main-content">
           <h1 class="title">Stay updated!</h1>
@@ -50,8 +56,8 @@
         <img src="./assets/images/icon-success.svg" alt="icon" />
         <h1 class="title">Thanks for subscribing!</h1>
         <p>
-          A confirmation email has been sent to <b></b>. Please
-          open it and click the button inside to confirm your subscription.
+          A confirmation email has been sent to <b></b>. Please open it and
+          click the button inside to confirm your subscription.
         </p>
         <button class="button dismiss-btn">Dismiss message</button>
       </section>
